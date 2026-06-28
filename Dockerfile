@@ -5,7 +5,9 @@ WORKDIR /app
 COPY package*.json ./
 RUN npm install
 
-COPY . .
+COPY server ./server
+COPY src ./src
+COPY public ./public
 
 EXPOSE 8080
 
