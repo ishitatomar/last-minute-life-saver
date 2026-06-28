@@ -1,17 +1,24 @@
-console.log("App starting...");
-import dotenv from "dotenv";
+const express = require("express");
+const cors = require("cors");
+const dotenv = require("dotenv");
+
 dotenv.config();
 
-import express from "express";
-import cors from "cors";
-
-//import "./firebase/firebaseAdmin.js";
-import aiRoutes from "./routes/aiRoutes.js";
+const aiRoutes = require("./routes/aiRoutes");
 
 console.log(
   "OpenRouter Key:",
   process.env.OPENROUTER_API_KEY ? "Loaded ✅" : "Missing ❌"
 );
+
+// IMPORTANT: Firebase import AFTER fix
+let firebaseReady = false;
+try {
+  require("./firebase/firebaseAdmin");
+  firebaseReady = true;
+} catch (err) {
+  console.warn("⚠️ Firebase disabled:", err.message);
+}
 
 const app = express();
 
@@ -26,6 +33,6 @@ app.use("/api", aiRoutes);
 
 const PORT = process.env.PORT || 8080;
 
-app.listen(PORT,"0.0.0.0", () => {
+app.listen(PORT, "0.0.0.0", () => {
   console.log("Server running on", PORT);
 });

@@ -1,6 +1,4 @@
-import { initializeApp, cert } from "firebase-admin/app";
-import { getFirestore } from "firebase-admin/firestore";
-import { getAuth } from "firebase-admin/auth";
+const admin = require("firebase-admin");
 
 const serviceAccount = {
   projectId: process.env.FIREBASE_PROJECT_ID,
@@ -10,23 +8,18 @@ const serviceAccount = {
     : undefined,
 };
 
-let db, auth;
-
 if (
-  serviceAccount.projectId &&
-  serviceAccount.clientEmail &&
-  serviceAccount.privateKey
+  !serviceAccount.projectId ||
+  !serviceAccount.clientEmail ||
+  !serviceAccount.privateKey
 ) {
-  const app = initializeApp({
-    credential: cert(serviceAccount),
-  });
-
-  db = getFirestore(app);
-  auth = getAuth(app);
-
-  console.log("🔥 Firebase initialized");
-} else {
-  console.warn("⚠️ Firebase not configured - skipping Firebase init");
+  console.warn("⚠️ Firebase not configured - skipping init");
+  module.exports = null;
+  return;
 }
 
-export { db, auth };
+admin.initializeApp({
+  credential: admin.credential.cert(serviceAccount),
+});
+
+module.exports = admin;
