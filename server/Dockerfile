@@ -9,4 +9,6 @@ COPY . .
 
 EXPOSE 8080
 
-CMD ["node", "server/server.js"]
+RUN ls -R
+
+CMD ["node", "./server/server.js"]
