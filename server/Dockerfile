@@ -7,8 +7,6 @@ RUN npm install
 
 COPY . .
 
-WORKDIR /app
-
 EXPOSE 8080
 
 CMD ["node", "server/server.js"]
