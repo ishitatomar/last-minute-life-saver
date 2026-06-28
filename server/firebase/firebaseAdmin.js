@@ -11,7 +11,10 @@ const serviceAccount = {
 };
 
 if (!serviceAccount.projectId || !serviceAccount.clientEmail || !serviceAccount.privateKey) {
-  throw new Error("❌ Missing Firebase environment variables");
+  if (!projectId || !clientEmail || !privateKey) {
+  console.warn("⚠️ Firebase not configured, skipping init");
+  return;
+}
 }
 
 initializeApp({
