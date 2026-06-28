@@ -10,16 +10,23 @@ const serviceAccount = {
     : undefined,
 };
 
-if (!serviceAccount.projectId || !serviceAccount.clientEmail || !serviceAccount.privateKey) {
-  if (!projectId || !clientEmail || !privateKey) {
-  console.warn("⚠️ Firebase not configured, skipping init");
-  return;
-}
+let db, auth;
+
+if (
+  serviceAccount.projectId &&
+  serviceAccount.clientEmail &&
+  serviceAccount.privateKey
+) {
+  const app = initializeApp({
+    credential: cert(serviceAccount),
+  });
+
+  db = getFirestore(app);
+  auth = getAuth(app);
+
+  console.log("🔥 Firebase initialized");
+} else {
+  console.warn("⚠️ Firebase not configured - skipping Firebase init");
 }
 
-initializeApp({
-  credential: cert(serviceAccount),
-});
-
-export const db = getFirestore();
-export const auth = getAuth();
+export { db, auth };
