@@ -1,0 +1,70 @@
+@import "tailwindcss";
+
+html,
+body,
+#root {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+/* ===== Calendar Theme ===== */
+
+.rbc-calendar {
+  color: #111827 !important;
+  background: white;
+}
+
+.rbc-header {
+  background: #f8fafc;
+  color: #111827 !important;
+  font-weight: 700;
+  padding: 10px;
+  border-color: #e5e7eb;
+}
+
+.rbc-month-view,
+.rbc-time-view {
+  border-color: #e5e7eb;
+}
+
+.rbc-date-cell {
+  color: #111827 !important;
+  padding: 6px;
+  font-weight: 600;
+}
+
+.rbc-off-range {
+  color: #9ca3af !important;
+}
+
+.rbc-off-range-bg {
+  background: #f3f4f6;
+}
+
+.rbc-today {
+  background: #dbeafe !important;
+}
+
+.rbc-time-header-content,
+.rbc-time-header,
+.rbc-time-content {
+  color: #111827 !important;
+}
+
+.rbc-time-gutter,
+.rbc-timeslot-group {
+  color: #111827 !important;
+}
+
+.rbc-label {
+  color: #111827 !important;
+}
+
+.rbc-day-bg {
+  background: white;
+}
+
+.rbc-toolbar {
+  display: none;
+}

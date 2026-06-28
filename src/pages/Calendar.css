@@ -1,0 +1,209 @@
+/* =========================================================
+   REACT BIG CALENDAR - CUSTOM THEME
+========================================================= */
+
+.rbc-calendar {
+    background: #ffffff;
+    border-radius: 20px;
+    overflow: hidden;
+    font-family: inherit;
+}
+
+/* =========================================================
+   WEEK HEADER
+========================================================= */
+
+.rbc-header {
+    background: #1E293B;
+    color: #F8FAFC !important;
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: .3px;
+    padding: 16px;
+    border: 1px solid #334155 !important;
+}
+
+/* =========================================================
+   MONTH VIEW
+========================================================= */
+
+.rbc-month-view {
+    border: none;
+    border-radius: 18px;
+    overflow: hidden;
+}
+
+/* =========================================================
+   ROWS
+========================================================= */
+
+.rbc-month-row {
+    min-height: 120px;
+}
+
+/* =========================================================
+   DAY CELLS
+========================================================= */
+
+.rbc-day-bg {
+    background: #FCFCFD;
+    border: 1px solid #E5E7EB !important;
+    transition: all .25s ease;
+}
+
+.rbc-day-bg:hover {
+    background: #F3F8FF;
+}
+
+/* Weekend */
+
+.rbc-day-bg:first-child,
+.rbc-day-bg:last-child {
+    background: #F8FAFC;
+}
+
+/* Previous / Next Month */
+
+.rbc-off-range-bg {
+    background: #F3F4F6;
+}
+
+.rbc-off-range {
+    color: #9CA3AF;
+}
+
+/* =========================================================
+   TODAY
+========================================================= */
+
+.rbc-today {
+    background: #E0F2FE !important;
+}
+
+/* Today's Date */
+
+.rbc-now .rbc-button-link {
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #06B6D4, #7C3AED);
+    color: white !important;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    box-shadow: 0 6px 14px rgba(99,102,241,.30);
+}
+
+/* =========================================================
+   DATE NUMBER
+========================================================= */
+
+.rbc-date-cell {
+    padding: 10px;
+    font-size: 17px;
+    font-weight: 700;
+    color: #1E293B;
+}
+
+/* =========================================================
+   GRID
+========================================================= */
+
+.rbc-month-row,
+.rbc-day-bg,
+.rbc-header,
+.rbc-date-cell {
+    border-color: #E5E7EB !important;
+}
+
+/* =========================================================
+   EVENTS
+========================================================= */
+
+.rbc-row-segment {
+    padding: 4px 6px;
+}
+
+.rbc-event {
+    border: none !important;
+    border-radius: 999px !important;
+    padding: 6px 12px !important;
+    font-size: 13px;
+    font-weight: 600;
+    box-shadow: 0 4px 10px rgba(0,0,0,.12);
+    transition: all .2s ease;
+}
+
+.rbc-event:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 18px rgba(0,0,0,.18);
+}
+
+.rbc-selected {
+    outline: none !important;
+}
+
+/* =========================================================
+   LINKS
+========================================================= */
+
+.rbc-button-link {
+    text-decoration: none !important;
+    font-weight: 700;
+}
+
+/* =========================================================
+   POPUP
+========================================================= */
+
+.rbc-overlay {
+    border-radius: 14px;
+    border: none;
+    box-shadow: 0 12px 30px rgba(0,0,0,.18);
+}
+
+.rbc-overlay-header {
+    padding: 12px;
+    font-weight: 600;
+}
+
+/* =========================================================
+   TIME GRID (Future Proof)
+========================================================= */
+
+.rbc-time-view,
+.rbc-time-header,
+.rbc-time-content {
+    border-color: #E5E7EB !important;
+}
+
+/* =========================================================
+   REMOVE DEFAULT OUTLINES
+========================================================= */
+
+.rbc-month-view,
+.rbc-calendar,
+.rbc-time-view {
+    outline: none;
+}
+
+/* Entire calendar background */
+.rbc-month-view {
+    background: #EEF4FF;
+}
+
+/* Every date cell */
+.rbc-month-row .rbc-day-bg {
+    background: #F3F8FF !important;
+}
+
+/* Hover */
+.rbc-month-row .rbc-day-bg:hover {
+    background: #E0F2FE !important;
+}
+
+/* Previous/Next month */
+.rbc-off-range-bg {
+    background: #E5E7EB !important;
+}
