@@ -1,12 +1,10 @@
-console.log("App starting...");
-
 const express = require("express");
 const cors = require("cors");
 const dotenv = require("dotenv");
 
-const aiRoutes = require("./routes/aiRoutes");
-
 dotenv.config();
+
+const aiRoutes = require("./routes/aiRoutes");
 
 const app = express();
 
@@ -22,5 +20,5 @@ app.get("/", (req, res) => {
 const PORT = process.env.PORT || 8080;
 
 app.listen(PORT, "0.0.0.0", () => {
-  console.log("Server running on", PORT);
+  console.log(`Server running on ${PORT}`);
 });
