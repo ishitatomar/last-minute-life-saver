@@ -3,12 +3,15 @@ FROM node:18
 WORKDIR /app
 
 COPY package*.json ./
+
 RUN npm install
 
 COPY . .
 
+RUN npm run build
+
+RUN npm install -g serve
+
 EXPOSE 8080
 
-CMD ["node", "server/server.js"]
-
-RUN ls -R /app
+CMD ["serve", "-s", "dist", "-l", "8080"]
