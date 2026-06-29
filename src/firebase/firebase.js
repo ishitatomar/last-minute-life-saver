@@ -13,3 +13,6 @@ const app = initializeApp(firebaseConfig);
 
 export const auth = getAuth(app);
 export const db = getFirestore(app);
+
+console.log("ENV CHECK:", import.meta.env);
+console.log("FIREBASE CONFIG:", firebaseConfig);
