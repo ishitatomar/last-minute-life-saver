@@ -2,11 +2,13 @@ FROM node:18
 
 WORKDIR /app
 
-COPY server/package*.json ./server/
-RUN cd server && npm install
+COPY package*.json ./
+RUN npm install
 
-COPY server ./server
+COPY . .
+
+RUN npm run build
 
 EXPOSE 8080
 
-CMD ["node", "server/server.js"]
+CMD ["node", "frontend-server.js"]
