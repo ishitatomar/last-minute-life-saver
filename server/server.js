@@ -1,10 +1,9 @@
-const express = require("express");
-const cors = require("cors");
-const dotenv = require("dotenv");
+import express from "express";
+import cors from "cors";
+import dotenv from "dotenv";
+import aiRoutes from "./routes/aiRoutes.js";
 
 dotenv.config();
-
-const aiRoutes = require("./routes/aiRoutes");
 
 const app = express();
 
