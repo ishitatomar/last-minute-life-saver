@@ -5,5 +5,10 @@ export default defineConfig({
   plugins: [react()],
   define: {
     global: "globalThis"
+  },
+  build: {
+    rollupOptions: {
+      external: []
+    }
   }
 });

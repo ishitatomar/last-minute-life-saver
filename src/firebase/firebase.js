@@ -3,17 +3,15 @@ import { getAuth } from "firebase/auth";
 import { getFirestore } from "firebase/firestore";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyDHprN1H_NcMK5eJT_wVFqwhKhz8e9zjP0",
-  authDomain: "last-minute-life-saver-926b1.firebaseapp.com",
-  projectId: "last-minute-life-saver-926b1",
-  storageBucket: "last-minute-life-saver-926b1.firebasestorage.app",
-  messagingSenderId: "604290075583",
-  appId: "1:604290075583:web:0264330b91d4fe00906f0a",
+  apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
+  authDomain: import.meta.env.VITE_FIREBASE_AUTH_DOMAIN,
+  projectId: import.meta.env.VITE_FIREBASE_PROJECT_ID,
+  appId: import.meta.env.VITE_FIREBASE_APP_ID,
 };
 
 const app = initializeApp(firebaseConfig);
 
+// 🔥 EXPORT THESE (IMPORTANT)
 export const auth = getAuth(app);
 export const db = getFirestore(app);
-
 export default app;
