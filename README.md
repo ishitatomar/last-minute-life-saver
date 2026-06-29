@@ -1,16 +1,42 @@
-# React + Vite
+# Last Minute Life Saver
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+An AI-powered productivity assistant that helps users prioritize tasks, generate intelligent schedules, and stay productive using AI.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- 🔐 Firebase Authentication
+- 🤖 AI Chat Assistant
+- 📅 Smart Calendar
+- 📝 Task Management
+- ⚡ AI Study Plan Generator
+- 📊 Productivity Analytics
+- ☁️ Google Cloud Deployment
 
-## React Compiler
+## Tech Stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+### Frontend
+- React
+- Vite
+- Tailwind CSS
 
-## Expanding the ESLint configuration
+### Backend
+- Node.js
+- Express.js
+- Firebase Admin SDK
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### Database
+- Firebase Firestore
+
+### AI
+- OpenRouter API
+
+### Deployment
+- Google Cloud Run
+- Docker
+- Cloud Build
+
+## Live Demo
+
+https://last-minute-life-saver-frontend-352463785944.asia-south1.run.app
+
+
