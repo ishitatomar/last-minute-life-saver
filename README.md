@@ -54,7 +54,7 @@ An AI-powered productivity companion that helps students, professionals, and dev
 
 ## 🎥 Demo Video
 
-🔗 https://drive.google.com/file/d/1VOk7hP3medxQpKCjva4k4aayhm0-R9mB/view?usp=drive_link
+🔗 https://drive.google.com/file/d/13wI-ATji5zSQbuPgRf8a0NHsixvv7sU0/view?usp=sharing
 
 ---
 
