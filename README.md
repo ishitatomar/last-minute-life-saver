@@ -1,18 +1,23 @@
-# Last Minute Life Saver
+# 🚀 Last Minute Life Saver
 
-An AI-powered productivity assistant that helps users prioritize tasks, generate intelligent schedules, and stay productive using AI.
+An AI-powered productivity companion that helps students, professionals, and developers organize tasks, prioritize deadlines, generate intelligent schedules, and boost productivity with AI.
 
-## Features
+---
 
-- 🔐 Firebase Authentication
-- 🤖 AI Chat Assistant
+## ✨ Features
+
+- 🔐 Secure Firebase Authentication
+- 🤖 AI Productivity Assistant
 - 📅 Smart Calendar
 - 📝 Task Management
 - ⚡ AI Study Plan Generator
-- 📊 Productivity Analytics
+- 📊 Productivity Analytics Dashboard
 - ☁️ Google Cloud Deployment
+- 🎯 Priority-based Task Scheduling
 
-## Tech Stack
+---
+
+## 🛠️ Tech Stack
 
 ### Frontend
 - React
@@ -27,18 +32,51 @@ An AI-powered productivity assistant that helps users prioritize tasks, generate
 ### Database
 - Firebase Firestore
 
+### Authentication
+- Firebase Authentication
+
 ### AI
 - OpenRouter API
 
 ### Deployment
-- Google Cloud Run
 - Docker
-- Cloud Build
+- Google Cloud Run
+- Google Cloud Build
+- Google Artifact Registry
 
-## Live Demo
+---
 
-https://last-minute-life-saver-frontend-352463785944.asia-south1.run.app
+## 🌐 Live Demo
 
-## Demo Video
+🔗 https://last-minute-life-saver-frontend-352463785944.asia-south1.run.app
 
-https://drive.google.com/file/d/1VOk7hP3medxQpKCjva4k4aayhm0-R9mB/view?usp=drive_link
+---
+
+## 🎥 Demo Video
+
+🔗 https://drive.google.com/file/d/1VOk7hP3medxQpKCjva4k4aayhm0-R9mB/view?usp=drive_link
+
+---
+
+## 🎯 Problem Statement
+
+**The Last-Minute Life Saver**
+
+Build an AI-powered productivity companion that proactively assists users in planning, prioritizing, and completing tasks before deadlines are missed.
+
+---
+
+## ☁️ Google Technologies Used
+
+- Google Cloud Run
+- Firebase Authentication
+- Firebase Firestore
+- Firebase Admin SDK
+- Google Cloud Build
+- Google Artifact Registry
+
+---
+
+## 📄 License
+
+This project was developed as part of the **Vibe2Ship Hackathon 2026**.
