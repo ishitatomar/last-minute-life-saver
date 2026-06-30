@@ -39,4 +39,7 @@ An AI-powered productivity assistant that helps users prioritize tasks, generate
 
 https://last-minute-life-saver-frontend-352463785944.asia-south1.run.app
 
+## Demo Video
 
+[https://last-minute-life-saver-frontend-352463785944.asia-south1.run.app
+](https://drive.google.com/file/d/1VOk7hP3medxQpKCjva4k4aayhm0-R9mB/view?usp=drive_link)
