@@ -46,6 +46,17 @@ An AI-powered productivity companion that helps students, professionals, and dev
 
 ---
 
+## ☁️ Google Technologies Used
+
+- Google Cloud Run
+- Firebase Authentication
+- Firebase Firestore
+- Firebase Admin SDK
+- Google Cloud Build
+- Google Artifact Registry
+
+---
+
 ## 🌐 Live Demo
 
 🔗 https://last-minute-life-saver-frontend-352463785944.asia-south1.run.app
@@ -61,25 +72,6 @@ An AI-powered productivity companion that helps students, professionals, and dev
 ## 🎥 Documentation
 
 🔗 https://docs.google.com/document/d/1wos8dGrWH2dVcaV5XOfm5kfXf43IULkJRv_2P25E_kY/edit?usp=drive_link
-
----
-
-## 🎯 Problem Statement
-
-**The Last-Minute Life Saver**
-
-Build an AI-powered productivity companion that proactively assists users in planning, prioritizing, and completing tasks before deadlines are missed.
-
----
-
-## ☁️ Google Technologies Used
-
-- Google Cloud Run
-- Firebase Authentication
-- Firebase Firestore
-- Firebase Admin SDK
-- Google Cloud Build
-- Google Artifact Registry
 
 ---
 
