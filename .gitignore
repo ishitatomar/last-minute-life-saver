@@ -25,6 +25,6 @@ dist-ssr
 
 .env
 .env.*
-!.env.production
+.env.production
 server/.env
 server/firebase/serviceAccountKey.json
