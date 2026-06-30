@@ -58,6 +58,12 @@ An AI-powered productivity companion that helps students, professionals, and dev
 
 ---
 
+## 🎥 Documentation
+
+🔗 https://docs.google.com/document/d/1wos8dGrWH2dVcaV5XOfm5kfXf43IULkJRv_2P25E_kY/edit?usp=drive_link
+
+---
+
 ## 🎯 Problem Statement
 
 **The Last-Minute Life Saver**
@@ -77,6 +83,3 @@ Build an AI-powered productivity companion that proactively assists users in pla
 
 ---
 
-## 📄 License
-
-This project was developed as part of the **Vibe2Ship Hackathon 2026**.
